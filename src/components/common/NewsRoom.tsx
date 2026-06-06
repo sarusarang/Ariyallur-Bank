@@ -23,7 +23,7 @@ export default function NewsRoom() {
       date: "June 05, 2026",
       tag: "RBI Guideline",
       title: "Positive Pay System (PPS) Implementation",
-      content: "As per RBI guidelines regarding Positive Pay System, customers are advised to submit minimum information about their cheque issuance (Cheque number, date, payee name, amount) for amounts above ₹50,000/-. This ensures protection against cheque counterfeiting and alterations.",
+      content: "As per RBI guidelines regarding Positive Pay System, customers are advised to submit minimum information about their cheque issuance (Cheque number, date, payee name, amount) for amounts above 50,000/-. This ensures protection against cheque counterfeiting and alterations.",
       isUrgent: true
     },
     {

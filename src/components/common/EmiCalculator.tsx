@@ -6,7 +6,7 @@ type LoanType = "gold" | "personal" | "home"
 
 export default function EmiCalculator() {
   const [loanType, setLoanType] = useState<LoanType>("gold")
-  const [amount, setAmount] = useState(200000) // ₹2,00,000
+  const [amount, setAmount] = useState(200000) // 2,00,000
   const [interestRate, setInterestRate] = useState(9.5) // 9.5%
   const [tenure, setTenure] = useState(12) // 12 months
 

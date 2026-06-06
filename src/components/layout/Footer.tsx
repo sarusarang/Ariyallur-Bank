@@ -1,6 +1,7 @@
 import { 
   Phone, Mail, MapPin, Clock, ShieldCheck, ArrowUpRight
 } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -34,7 +35,7 @@ export default function Footer() {
                 DICGC Insured
               </div>
               <p className="text-[10px] text-slate-400 leading-relaxed">
-                Manjeri Co-op Urban Bank is registered with DICGC. Each depositor is insured up to a maximum of ₹5,00,000 for both principal and interest amounts.
+                Ariyallur Service Co-operative Bank is registered with DICGC. Each depositor is insured up to a maximum of Rs. 5,00,000 for both principal and interest amounts.
               </p>
               <a 
                 href="https://www.dicgc.org.in" 
@@ -54,40 +55,58 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3.5 text-xs text-slate-400 font-medium">
               <li>
-                <a href="#savings" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                <Link to="/savings-deposit" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
                   <span>Savings Accounts</span>
                   <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#fixed-deposit" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
-                  <span>Fixed & Term Deposits</span>
+                <Link to="/fixed-deposit" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                  <span>Fixed &amp; Term Deposits</span>
                   <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#gold-loan" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                <Link to="/gold-loan" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
                   <span>Gold Loans (Quick Approval)</span>
                   <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#home-loan" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
-                  <span>Home & Property Loans</span>
+                <Link to="/home-loan" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                  <span>Home &amp; Property Loans</span>
                   <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#lockers" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                <Link to="/safe-deposit-locker" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
                   <span>Safe Deposit Lockers</span>
                   <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#mobile-banking" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                <Link to="/mobile-banking" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
                   <span>Digital Mobile Banking</span>
                   <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link to="/gold-chitty" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                  <span>Gold Chitty Schemes</span>
+                  <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link to="/multi-section-kuri" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                  <span>Multi-Section Kuri (Chit)</span>
+                  <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link to="/regular-chitty" className="hover:text-white hover:underline transition-all flex items-center justify-between group">
+                  <span>Regular Savings Chitty</span>
+                  <ArrowUpRight className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
               </li>
             </ul>
           </div>
@@ -99,22 +118,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3.5 text-xs text-slate-400 font-medium">
               <li>
-                <a href="#about" className="hover:text-white hover:underline transition-all">About Our Legacy</a>
+                <Link to="/our-history" className="hover:text-white hover:underline transition-all">Our History</Link>
               </li>
               <li>
-                <a href="#branches" className="hover:text-white hover:underline transition-all">Locate Branches & ATMs</a>
+                <Link to="/branches" className="hover:text-white hover:underline transition-all">Locate Branches &amp; ATMs</Link>
               </li>
               <li>
-                <a href="#downloads" className="hover:text-white hover:underline transition-all">Download Account Forms</a>
+                <a href="/#downloads" className="hover:text-white hover:underline transition-all">Download Account Forms</a>
               </li>
               <li>
-                <a href="#charges" className="hover:text-white hover:underline transition-all">Interest Rates & Service Charges</a>
+                <a href="/#charges" className="hover:text-white hover:underline transition-all">Interest Rates &amp; Service Charges</a>
               </li>
               <li>
-                <a href="#board" className="hover:text-white hover:underline transition-all">Board of Directors</a>
+                <Link to="/board-of-directors" className="hover:text-white hover:underline transition-all">Board of Directors</Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white hover:underline transition-all">Customer Grievance Redressal</a>
+                <a href="/#contact" className="hover:text-white hover:underline transition-all">Customer Grievance Redressal</a>
               </li>
             </ul>
           </div>
@@ -136,7 +155,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Mail className="size-4 text-[#0F7EC3] shrink-0" />
-                  <span>[EMAIL_ADDRESS]</span>
+                  <span>info@ariyallurbank.com</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <Clock className="size-4 mt-0.5 text-[#0F7EC3] shrink-0" />
@@ -173,11 +192,11 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             <a href="#privacy" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
-            <span>•</span>
+            <span>|</span>
             <a href="#terms" className="hover:text-slate-300 transition-colors">Terms of Service</a>
-            <span>•</span>
+            <span>|</span>
             <a href="#disclaimer" className="hover:text-slate-300 transition-colors">RBI Disclosures</a>
-            <span>•</span>
+            <span>|</span>
             <a href="#sitemap" className="hover:text-slate-300 transition-colors">Sitemap</a>
           </div>
 
@@ -238,7 +257,7 @@ export default function Footer() {
       <div className="bg-[#080f18] py-5 text-center text-[10px] text-slate-600 border-t border-slate-950">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-3">
           <span>
-            Copyright © {currentYear} Ariyallur Service Co-Operative Bank Ltd. All Rights Reserved.
+            Copyright (c) {currentYear} Ariyallur Service Co-Operative Bank Ltd. All Rights Reserved.
           </span>
           <span className="flex items-center gap-1.5">
             Designed for excellence. Developed by 

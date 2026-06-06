@@ -1,6 +1,7 @@
 import HomeSlider from "../components/common/HomeSlider"
 import WelcomeSection from "../components/common/WelcomeSection"
 import QuickLinks from "../components/common/QuickLinks"
+import ChittyHighlight from "../components/common/ChittyHighlight"
 import CoreValues from "../components/common/CoreValues"
 import EmiCalculator from "../components/common/EmiCalculator"
 import MobileBanking from "../components/common/MobileBanking"
@@ -18,7 +19,10 @@ export default function Home() {
       {/* 3. Quick Links / Services Cards Grid */}
       <QuickLinks />
 
-      {/* 4. Core Values Section — Dark navy theme */}
+      {/* Chitty Schemes Highlight Section */}
+      <ChittyHighlight />
+
+      {/* 4. Core Values Section  Dark navy theme */}
       <CoreValues />
 
       {/* 5. Interactive EMI Loan Calculator */}

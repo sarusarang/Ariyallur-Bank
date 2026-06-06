@@ -39,7 +39,7 @@ export default function HomeSlider() {
           <motion.div 
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8, type: "spring" }}
+            transition={{ delay: 0.2, duration: 0.8, type: "spring" as const }}
             className="relative z-10 w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-amber-400 via-yellow-200 to-amber-600 rounded-full flex items-center justify-center p-3 shadow-2xl shadow-yellow-500/20"
           >
             <div className="bg-[#0b1623] w-full h-full rounded-full flex flex-col items-center justify-center p-6 text-center border border-amber-400/40">
@@ -84,7 +84,7 @@ export default function HomeSlider() {
             </div>
             
             <div className="space-y-2">
-              <span className="block text-2xl font-mono text-slate-200 tracking-wider">•••• •••• •••• 1937</span>
+              <span className="block text-2xl font-mono text-slate-200 tracking-wider">   1937</span>
               <div className="flex justify-between items-center text-[10px] text-slate-400 uppercase">
                 <span>Interest: Low Rates</span>
                 <span className="bg-yellow-500/10 text-yellow-500 font-bold px-2 py-0.5 rounded">Quick Approval</span>
@@ -143,7 +143,7 @@ export default function HomeSlider() {
               {/* Account Balance Card */}
               <div className="bg-gradient-to-r from-sky-600 to-sky-700 rounded-xl p-3 text-white space-y-1.5 shadow-md">
                 <span className="text-[9px] uppercase tracking-wide text-sky-200">Available Balance</span>
-                <span className="text-base font-extrabold block">₹4,89,520.00</span>
+                <span className="text-base font-extrabold block">4,89,520.00</span>
                 <span className="text-[8px] text-sky-100 block opacity-80">Savings: *1937</span>
               </div>
 
@@ -155,14 +155,14 @@ export default function HomeSlider() {
                     <div className="p-1 bg-green-500/10 rounded text-green-500"><CheckCircle2 className="size-3" /></div>
                     <span>IMPS Transfer</span>
                   </div>
-                  <span className="font-semibold text-green-400">+₹15,000.00</span>
+                  <span className="font-semibold text-green-400">+15,000.00</span>
                 </div>
                 <div className="bg-slate-900/60 p-2 rounded-lg flex justify-between items-center text-[10px]">
                   <div className="flex items-center gap-1.5">
                     <div className="p-1 bg-sky-500/10 rounded text-[#0F7EC3]"><CheckCircle2 className="size-3" /></div>
                     <span>Mobile Recharge</span>
                   </div>
-                  <span className="font-semibold text-slate-300">-₹499.00</span>
+                  <span className="font-semibold text-slate-300">-499.00</span>
                 </div>
               </div>
             </div>

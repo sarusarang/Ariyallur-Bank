@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { Link } from "react-router-dom"
 import { 
   Building2, Users, Award, ShieldCheck, Wallet, 
   KeyRound, ArrowLeftRight, Smartphone, Bell, CreditCard, Landmark,
   BadgePercent, Briefcase, Home, Car, ChevronDown, 
   Menu, X, PiggyBank, BarChart3, Receipt, 
-  MapPin, PhoneCall, Globe, Info
+  MapPin, PhoneCall, Globe, Info, TrendingUp
 } from "lucide-react"
 
 // Mega dropdown item structure
@@ -42,44 +43,55 @@ export default function Header() {
       title: "Corporate Info",
       icon: <Building2 className="size-5 text-primary" />,
       items: [
-        { name: "About Us", href: "#about", desc: "Our heritage and vision since 1937", icon: <Info className="size-4" /> },
-        { name: "Board of Directors", href: "#board", desc: "Our leadership & administration team", icon: <Users className="size-4" /> },
-        { name: "HO & Branches", href: "#branches", desc: "Find a branch or ATM near you", icon: <MapPin className="size-4" /> },
-        { name: "Our Achievements", href: "#achievements", desc: "Milestones and recognitions", icon: <Award className="size-4" /> },
-        { name: "DEAF Account", href: "#deaf", desc: "Depositor Education & Awareness Fund", icon: <ShieldCheck className="size-4" /> },
+        { name: "Our History", href: "/our-history", desc: "Our heritage and vision since 1937", icon: <Info className="size-4" /> },
+        { name: "Board of Directors", href: "/board-of-directors", desc: "Our leadership & administration team", icon: <Users className="size-4" /> },
+        { name: "HO & Branches", href: "/branches", desc: "Find a branch or ATM near you", icon: <MapPin className="size-4" /> },
+        { name: "Our Achievements", href: "/#achievements", desc: "Milestones and recognitions", icon: <Award className="size-4" /> },
+        { name: "DEAF Account", href: "/#deaf", desc: "Depositor Education & Awareness Fund", icon: <ShieldCheck className="size-4" /> },
       ]
     },
     {
       title: "Facilities",
       icon: <Wallet className="size-5 text-primary" />,
       items: [
-        { name: "Safe Deposit Locker", href: "#lockers", desc: "Keep your valuables safe and secure", icon: <KeyRound className="size-4" /> },
-        { name: "RTGS / NEFT / IMPS", href: "#transfer", desc: "Quick and secure money transfers", icon: <ArrowLeftRight className="size-4" /> },
-        { name: "Mobile Banking", href: "#mobile-banking", desc: "Bank on the go with our modern app", icon: <Smartphone className="size-4" /> },
-        { name: "SMS Alerts", href: "#sms-alerts", desc: "Real-time updates on your account", icon: <Bell className="size-4" /> },
-        { name: "ATM / Micro ATM", href: "#atm", desc: "24/7 card access and rural banking", icon: <CreditCard className="size-4" /> },
+        { name: "Safe Deposit Locker", href: "/safe-deposit-locker", desc: "Keep your valuables safe and secure", icon: <KeyRound className="size-4" /> },
+        { name: "RTGS / NEFT / IMPS", href: "/money-transfer", desc: "Quick and secure money transfers", icon: <ArrowLeftRight className="size-4" /> },
+        { name: "Mobile Banking", href: "/mobile-banking", desc: "Bank on the go with our modern app", icon: <Smartphone className="size-4" /> },
+        { name: "SMS Alerts", href: "/#sms-alerts", desc: "Real-time updates on your account", icon: <Bell className="size-4" /> },
+        { name: "ATM / Micro ATM", href: "/#atm", desc: "24/7 card access and rural banking", icon: <CreditCard className="size-4" /> },
       ]
     },
     {
       title: "Loans",
       icon: <BadgePercent className="size-5 text-primary" />,
       items: [
-        { name: "Gold Loan", href: "#gold-loan", desc: "Instant cash against gold ornaments", icon: <CoinsIcon className="size-4" /> },
-        { name: "Personal Loan", href: "#personal-loan", desc: "Financial support for personal goals", icon: <Users className="size-4" /> },
-        { name: "Home Loan", href: "#home-loan", desc: "Build or buy your dream home", icon: <Home className="size-4" /> },
-        { name: "Vehicle Loan", href: "#vehicle-loan", desc: "Easy funding for your new car or bike", icon: <Car className="size-4" /> },
-        { name: "Business & Agri Loan", href: "#business-loan", desc: "Support for trade, industry & farming", icon: <Briefcase className="size-4" /> },
+        { name: "Gold Loan", href: "/gold-loan", desc: "Instant cash against gold ornaments", icon: <CoinsIcon className="size-4" /> },
+        { name: "Personal Loan", href: "/personal-loan", desc: "Financial support for personal goals", icon: <Users className="size-4" /> },
+        { name: "Home Loan", href: "/home-loan", desc: "Build or buy your dream home", icon: <Home className="size-4" /> },
+        { name: "Vehicle Loan", href: "/#vehicle-loan", desc: "Easy funding for your new car or bike", icon: <Car className="size-4" /> },
+        { name: "Business & Agri Loan", href: "/#business-loan", desc: "Support for trade, industry & farming", icon: <Briefcase className="size-4" /> },
       ]
     },
     {
       title: "Deposits",
       icon: <PiggyBank className="size-5 text-primary" />,
       items: [
-        { name: "Savings Deposit", href: "#savings", desc: "Earn interest while keeping funds flexible", icon: <PiggyBank className="size-4" /> },
-        { name: "Current Deposit", href: "#current", desc: "Designed for business cash flows", icon: <BarChart3 className="size-4" /> },
-        { name: "Fixed Deposit", href: "#fixed-deposit", desc: "High yields for your locked funds", icon: <Landmark className="size-4" /> },
-        { name: "Recurring Deposit", href: "#recurring", desc: "Save systematically every month", icon: <Receipt className="size-4" /> },
-        { name: "Reinvestment Schemes", href: "#reinvestment", desc: "Maximize compound interest returns", icon: <Globe className="size-4" /> },
+        { name: "Savings Deposit", href: "/savings-deposit", desc: "Earn interest while keeping funds flexible", icon: <PiggyBank className="size-4" /> },
+        { name: "Current Deposit", href: "/current-deposit", desc: "Designed for business cash flows", icon: <BarChart3 className="size-4" /> },
+        { name: "Fixed Deposit", href: "/fixed-deposit", desc: "High yields for your locked funds", icon: <Landmark className="size-4" /> },
+        { name: "Recurring Deposit", href: "/#recurring", desc: "Save systematically every month", icon: <Receipt className="size-4" /> },
+        { name: "Reinvestment Schemes", href: "/#reinvestment", desc: "Maximize compound interest returns", icon: <Globe className="size-4" /> },
+      ]
+    },
+    {
+      title: "Chitty Schemes",
+      icon: <CoinsIcon className="size-5 text-primary" />,
+      items: [
+        { name: "Gold Chitty", href: "/gold-chitty", desc: "Systematic gold savings for future needs", icon: <Award className="size-4" /> },
+        { name: "Multi-Section Kuri", href: "/multi-section-kuri", desc: "Maximize your chances of winning draws", icon: <TrendingUp className="size-4" /> },
+        { name: "Regular Savings Chitty", href: "/regular-chitty", desc: "Flexible bidding and regular dividends", icon: <PiggyBank className="size-4" /> },
+        { name: "Chitty Loan / Advance", href: "/#chitty-loan", desc: "Instant bridge loans against deposits", icon: <Landmark className="size-4" /> },
+        { name: "Special NRI Chitty", href: "/#nri-chitty", desc: "Exclusive chitty investment plans for NRIs", icon: <Globe className="size-4" /> },
       ]
     }
   ]
@@ -95,16 +107,16 @@ export default function Header() {
             <span>' ASCB - Banking since 1937 '</span>
           </div>
           <div className="flex gap-4 items-center">
-            <a href="#branches" className="hover:text-sky-200 transition-colors">Locate Branches</a>
-            <span>•</span>
+            <a href="/branches" className="hover:text-sky-200 transition-colors">Locate Branches</a>
+            <span>|</span>
             <a href="#charges" className="hover:text-sky-200 transition-colors">Service Charges</a>
-            <span>•</span>
+            <span>|</span>
             <a href="#downloads" className="hover:text-sky-200 transition-colors">Downloads</a>
           </div>
         </div>
       </div>
 
-      {/* Main Navbar — sticky with glassmorphism on scroll */}
+      {/* Main Navbar  sticky with glassmorphism on scroll */}
       <motion.header
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -118,11 +130,11 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-3 group">
+            <Link to="/" className="flex items-center gap-3 group">
               <div className="relative h-12 w-12 flex items-center justify-center overflow-hidden bg-slate-50 rounded-lg p-1 border border-slate-100">
                 <img 
                   src="/ASCB-LOGO-Trans.png" 
-                  alt="Manjeri Co-operative Urban Bank Logo" 
+                  alt="Ariyallur Service Co-operative Bank Logo" 
                   className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105" 
                 />
               </div>
@@ -134,11 +146,11 @@ export default function Header() {
                  Service Co-operative Bank Ltd
                 </span>
               </div>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden xl:flex items-center gap-1.5 font-medium text-slate-600 text-sm">
-              <a href="#" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Home</a>
+              <Link to="/" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Home</Link>
               
               {/* Mega Dropdown Hover Menu */}
               <div 
@@ -162,7 +174,7 @@ export default function Header() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.98 }}
                       transition={{ duration: 0.2, ease: "easeOut" }}
-                      className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[920px] z-50 pointer-events-auto"
+                      className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[1140px] z-50 pointer-events-auto"
                     >
                       {/* Arrow pointer */}
                       <div className="flex justify-center -mb-1">
@@ -172,10 +184,10 @@ export default function Header() {
                         {/* Dropdown Header bar */}
                         <div className="bg-linear-to-r from-[#0F7EC3]/5 via-sky-50 to-[#0F7EC3]/5 px-6 py-3 border-b border-slate-100 flex items-center gap-2">
                           <span className="text-[10px] font-extrabold text-[#0F7EC3] uppercase tracking-widest">Products & Services</span>
-                          <span className="text-slate-300 text-xs">—</span>
+                          <span className="text-slate-300 text-xs">|</span>
                           <span className="text-[10px] text-slate-400 font-medium">Select a service category to explore</span>
                         </div>
-                        <div className="grid grid-cols-4 p-5 gap-5">
+                        <div className="grid grid-cols-5 p-5 gap-5">
                           {servicesData.map((section, idx) => (
                             <div key={idx} className="space-y-1">
                               {/* Category Header */}
@@ -186,8 +198,9 @@ export default function Header() {
                               <ul className="space-y-0.5">
                                 {section.items.map((item, itemIdx) => (
                                   <li key={itemIdx}>
-                                    <a
-                                      href={item.href}
+                                    <Link
+                                      to={item.href}
+                                      onClick={() => setActiveDropdown(false)}
                                       className="flex items-start gap-2.5 px-2 py-2 rounded-lg hover:bg-sky-50 transition-all group"
                                     >
                                       <div className="mt-0.5 text-slate-400 group-hover:text-[#0F7EC3] transition-colors shrink-0">
@@ -201,7 +214,7 @@ export default function Header() {
                                           {item.desc}
                                         </div>
                                       </div>
-                                    </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
@@ -212,7 +225,7 @@ export default function Header() {
                         <div className="px-6 py-3 bg-sky-50/60 border-t border-slate-100 flex items-center justify-between">
                           <span className="text-[10px] text-slate-400 font-medium">Need help choosing a service?</span>
                           <a href="#contact" className="text-[10px] font-bold text-[#0F7EC3] hover:text-[#0b5c91] flex items-center gap-1 transition-colors">
-                            Talk to an advisor →
+                            Talk to an advisor -&gt;
                           </a>
                         </div>
                       </div>
@@ -221,11 +234,11 @@ export default function Header() {
                 </AnimatePresence>
               </div>
 
-              <a href="#branches" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Our Branches</a>
-              <a href="#news" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">News Room</a>
-              <a href="#downloads" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Downloads</a>
-              <a href="#charges" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Charges</a>
-              <a href="#contact" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Contacts</a>
+              <Link to="/branches" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Our Branches</Link>
+              <a href="/#news" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">News Room</a>
+              <a href="/#downloads" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Downloads</a>
+              <a href="/#charges" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Charges</a>
+              <a href="/#contact" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Contacts</a>
             </nav>
 
             {/* Desktop Action Buttons */}
@@ -270,14 +283,14 @@ export default function Header() {
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              transition={{ type: "spring" as const, damping: 25, stiffness: 200 }}
               className="fixed right-0 top-0 bottom-0 w-full max-w-[320px] bg-white z-50 shadow-2xl p-6 overflow-y-auto flex flex-col xl:hidden"
             >
               <div className="flex items-center justify-between pb-6 border-b border-slate-100">
-                <div className="flex items-center gap-2">
+                <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2">
                   <img src="/ASCB-LOGO-Trans.png" alt="Logo" className="h-8 object-contain" />
                   <span className="font-extrabold text-[#0F7EC3] text-sm tracking-tight">ASCB Bank</span>
-                </div>
+                </Link>
                 <button
                   onClick={() => setIsOpen(false)}
                   className="p-1 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors"
@@ -287,13 +300,13 @@ export default function Header() {
               </div>
 
               <div className="flex-1 py-4 space-y-2">
-                <a 
-                  href="#" 
+                <Link 
+                  to="/" 
                   onClick={() => setIsOpen(false)} 
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Home
-                </a>
+                </Link>
 
                 {/* Mobile Services Accordion */}
                 <div className="space-y-1">
@@ -319,15 +332,15 @@ export default function Header() {
                               {section.icon} {section.title}
                             </h5>
                             {section.items.map((item, itemIdx) => (
-                              <a
+                              <Link
                                 key={itemIdx}
-                                href={item.href}
+                                to={item.href}
                                 onClick={() => setIsOpen(false)}
                                 className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-700 text-xs hover:bg-sky-50/70 hover:text-primary transition-all"
                               >
                                 {item.icon}
                                 {item.name}
-                              </a>
+                              </Link>
                             ))}
                           </div>
                         ))}
@@ -336,36 +349,36 @@ export default function Header() {
                   </AnimatePresence>
                 </div>
 
-                <a 
-                  href="#branches" 
+                <Link 
+                  to="/branches" 
                   onClick={() => setIsOpen(false)} 
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Our Branches
-                </a>
+                </Link>
                 <a 
-                  href="#news" 
+                  href="/#news" 
                   onClick={() => setIsOpen(false)} 
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   News Room
                 </a>
                 <a 
-                  href="#downloads" 
+                  href="/#downloads" 
                   onClick={() => setIsOpen(false)} 
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Downloads
                 </a>
                 <a 
-                  href="#charges" 
+                  href="/#charges" 
                   onClick={() => setIsOpen(false)} 
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Charges
                 </a>
                 <a 
-                  href="#contact" 
+                  href="/#contact" 
                   onClick={() => setIsOpen(false)} 
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >

@@ -19,7 +19,7 @@ const statItems = [
   { label: "Years of Financial Trust", value: "89+", desc: "Serving generations since 1937" },
   { label: "Satisfied Customers", value: "100k+", desc: "Trusted by families and local businesses" },
   { label: "Audit Classification", value: "Class A", desc: "Top-tier credit compliance rating" },
-  { label: "Core Deposit Security", value: "100%", desc: "DICGC insured up to ₹5 Lakhs" }
+  { label: "Core Deposit Security", value: "100%", desc: "DICGC insured up to 5 Lakhs" }
 ]
 
 export default function WelcomeSection() {
@@ -48,7 +48,7 @@ export default function WelcomeSection() {
             </h2>
 
             <p className="text-slate-600 text-sm sm:text-base font-semibold leading-relaxed">
-              Welcome to Ariyallur Service Co-operative Bank Ltd. — where your goals meet our commitment.
+              Welcome to Ariyallur Service Co-operative Bank Ltd.  where your goals meet our commitment.
             </p>
 
             <p className="text-slate-500 text-xs sm:text-sm leading-relaxed font-normal">

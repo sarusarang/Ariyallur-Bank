@@ -34,7 +34,7 @@ export default function MobileBanking() {
               {/* App Interface Mockup */}
               <div className="bg-sky-600 rounded-2xl p-4 text-white space-y-2 relative overflow-hidden shadow-md">
                 <span className="text-[9px] uppercase tracking-wider block opacity-75">Instant Gold Loan Balance</span>
-                <span className="text-xl font-extrabold block">₹1,50,000</span>
+                <span className="text-xl font-extrabold block">1,50,000</span>
                 <span className="text-[8px] block mt-4 bg-sky-700/60 w-fit px-2 py-0.5 rounded">Active Status</span>
               </div>
 
