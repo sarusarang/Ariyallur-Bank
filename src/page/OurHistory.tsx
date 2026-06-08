@@ -45,7 +45,7 @@ export default function OurHistory() {
       year: "1988",
       title: "Class-I Co-operative Bank",
       icon: <Landmark className="size-5" />,
-      desc: "Recognized for stronger operations, better credit delivery, and wider financial inclusion across Malappuram.",
+      desc: "Recognized for stronger operations, better credit delivery, and wider financial inclusion across the local community.",
       highlight: "Formal banking scale"
     },
     {
@@ -64,10 +64,10 @@ export default function OurHistory() {
     },
     {
       year: "2019",
-      title: "ATM & Micro-ATM Reach",
+      title: "Branch Service Reach",
       icon: <WalletCards className="size-5" />,
-      desc: "Expanded cash access with ATM and micro-ATM points for easier service outside regular counters.",
-      highlight: "Always-on access"
+      desc: "Expanded member support through the Main Branch, Kodakkad Branch, and Anangadi Branch service counters.",
+      highlight: "Local access"
     },
     {
       year: "2025",
@@ -82,7 +82,7 @@ export default function OurHistory() {
     { value: "89+", label: "Years", sub: "Serving since 1937" },
     { value: "1L+", label: "Members", sub: "Across the region" },
     { value: "3", label: "Branches", sub: "With service desks" },
-    { value: "4", label: "ATM Points", sub: "Including micro-ATM" }
+    { value: "F7730", label: "Bank No.", sub: "Registered identity" }
   ]
 
   const values = [
@@ -188,20 +188,20 @@ export default function OurHistory() {
           reverse
           badge="Digital transformation"
           title="From handwritten ledgers to smooth digital banking"
-          subtitle="The modern ASCB experience brings together computerized counters, secure transfers, ATM access, and mobile-first banking while retaining personal branch support for members who prefer assisted service."
+          subtitle="The modern ASCB experience brings together computerized counters, secure transfers, mobile-first banking, and personal branch support for members who prefer assisted service."
           image="/history_modern.png"
           imageAlt="Modern cooperative bank branch with digital banking signage"
           imageLabel="Modern ASCB service experience"
           points={[
             "Computerized branch counters",
             "RTGS, NEFT and IMPS enabled",
-            "ATM and micro-ATM access points",
+            "Main Branch, Kodakkad, and Anangadi service desks",
             "Mobile banking and account alerts"
           ]}
           stats={[
-            { value: "24/7", label: "Digital access" },
-            { value: "4", label: "ATM points" },
-            { value: "3", label: "Branches" }
+            { value: "3", label: "Branches" },
+            { value: "HO", label: "Main branch" },
+            { value: "1937", label: "Founded" }
           ]}
         />
 

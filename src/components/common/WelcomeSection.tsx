@@ -68,7 +68,7 @@ export default function WelcomeSection() {
                 <div className="p-2 bg-sky-50 rounded-lg text-primary shrink-0"><Landmark className="size-5" /></div>
                 <div>
                   <h4 className="font-extrabold text-slate-800 text-sm">Local Heritage</h4>
-                  <p className="text-[11px] text-slate-400 mt-0.5 leading-normal">Deeply embedded in the growth and trade of Manjeri.</p>
+                  <p className="text-[11px] text-slate-400 mt-0.5 leading-normal">Deeply embedded in Ariyallur and the Vallikkunnu community.</p>
                 </div>
               </div>
             </div>

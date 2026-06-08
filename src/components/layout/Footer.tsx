@@ -121,7 +121,7 @@ export default function Footer() {
                 <Link to="/our-history" className="hover:text-white hover:underline transition-all">Our History</Link>
               </li>
               <li>
-                <Link to="/branches" className="hover:text-white hover:underline transition-all">Locate Branches &amp; ATMs</Link>
+                <Link to="/branches" className="hover:text-white hover:underline transition-all">Locate Branches</Link>
               </li>
               <li>
                 <a href="/#downloads" className="hover:text-white hover:underline transition-all">Download Account Forms</a>
@@ -147,7 +147,10 @@ export default function Footer() {
               <ul className="space-y-3.5 text-xs text-slate-400">
                 <li className="flex items-start gap-2.5">
                   <MapPin className="size-4 mt-0.5 text-[#0F7EC3] shrink-0" />
-                  <span>K.P.M. Tower, Court Road, Malappuram, Kerala - 676121</span>
+                  <span>
+                    3VR2+HQ6, Chettipadi Rd, Near Vallikkunnu railway station,
+                    Ariyallur, Vallikkunnu, Kerala 676312
+                  </span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Phone className="size-4 text-[#0F7EC3] shrink-0" />

@@ -64,7 +64,7 @@ export default function BoardOfDirectors() {
     { name: "Sri. K. Gopinathan", role: "Audit & Compliance", focus: "Internal audit and statutory reporting", photo: directorPhotos[0] },
     { name: "Sri. P. Haridas", role: "Agricultural Credit", focus: "Farmer credit support and seasonal lending", photo: directorPhotos[2] },
     { name: "Smt. Safeera Beevi", role: "Women Welfare", focus: "Women-led savings and enterprise initiatives", photo: directorPhotos[1] },
-    { name: "Sri. R. Krishnakumar", role: "Infrastructure", focus: "Branch facilities, ATM access, and security upgrades", photo: directorPhotos[0] },
+    { name: "Sri. R. Krishnakumar", role: "Infrastructure", focus: "Branch facilities, service access, and security upgrades", photo: directorPhotos[0] },
     { name: "Smt. L. Radha", role: "Social Programs", focus: "Community development and financial inclusion", photo: directorPhotos[1] },
     { name: "Sri. V. Suresh", role: "Legal Affairs", focus: "Policy review, documentation, and legal checks", photo: directorPhotos[2] }
   ]
