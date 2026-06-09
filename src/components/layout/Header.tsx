@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Link } from "react-router-dom"
-import { 
-  Building2, Users, Award, ShieldCheck, Wallet, 
+import {
+  Building2, Users, Award, ShieldCheck, Wallet,
   KeyRound, ArrowLeftRight, Smartphone, Bell, CreditCard, Landmark,
-  BadgePercent, Briefcase, Home, Car, ChevronDown, 
-  Menu, X, PiggyBank, BarChart3, Receipt, 
+  BadgePercent, Briefcase, Home, Car, ChevronDown,
+  Menu, X, PiggyBank, BarChart3, Receipt,
   MapPin, PhoneCall, Globe, Info, TrendingUp
 } from "lucide-react"
 
@@ -121,47 +121,37 @@ export default function Header() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.45, ease: "easeOut" }}
-        className={`sticky top-0 z-50 transition-[background,box-shadow,padding] duration-300 ${
-          isScrolled
+        className={`sticky top-0 z-50 transition-[background,box-shadow,padding] duration-300 ${isScrolled
             ? "bg-white/95 backdrop-blur-md shadow-lg py-3 border-b border-slate-100"
             : "bg-white py-4 border-b border-slate-100"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
+
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className="relative h-12 w-12 flex items-center justify-center overflow-hidden bg-slate-50 rounded-lg p-1 border border-slate-100">
-                <img 
-                  src="/ASCB-LOGO-Trans.png" 
-                  alt="Ariyallur Service Co-operative Bank Logo" 
-                  className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105" 
-                />
-              </div>
-              <div>
-                <span className="block font-extrabold text-[#0F7EC3] text-lg leading-tight tracking-tight group-hover:text-[#0b5c91] transition-colors">
-                  ARIYALLUR
-                </span>
-                <span className="block text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-none mt-0.5">
-                 Service Co-operative Bank Ltd
-                </span>
-              </div>
+            <Link to="/" className="">
+
+              <img
+                src="/LOGO-Nav.png"
+                alt="Ariyallur Service Co-operative Bank Logo"
+                className="h-12 w-52 object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden xl:flex items-center gap-1.5 font-medium text-slate-600 text-sm">
               <Link to="/" className="px-3 py-2 rounded-lg hover:text-[#0F7EC3] hover:bg-slate-50 transition-all">Home</Link>
-              
+
               {/* Mega Dropdown Hover Menu */}
-              <div 
+              <div
                 className="relative"
                 onMouseEnter={() => setActiveDropdown(true)}
                 onMouseLeave={() => setActiveDropdown(false)}
               >
-                <button 
-                  className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-all hover:text-[#0F7EC3] hover:bg-slate-50 cursor-pointer ${
-                    activeDropdown ? "text-[#0F7EC3] bg-slate-50" : ""
-                  }`}
+                <button
+                  className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-all hover:text-[#0F7EC3] hover:bg-slate-50 cursor-pointer ${activeDropdown ? "text-[#0F7EC3] bg-slate-50" : ""
+                    }`}
                 >
                   Products & Services
                   <ChevronDown className={`size-4 transition-transform duration-300 ${activeDropdown ? "rotate-180" : ""}`} />
@@ -243,8 +233,8 @@ export default function Header() {
 
             {/* Desktop Action Buttons */}
             <div className="hidden xl:flex items-center gap-3">
-              <a 
-                href="#ebanking" 
+              <a
+                href="#ebanking"
                 className="bg-linear-to-r from-[#0F7EC3] to-[#1A7CC1] hover:from-[#0b5c91] hover:to-[#0F7EC3] text-white px-5 py-2.5 rounded-xl font-semibold text-xs shadow-md shadow-sky-500/10 hover:shadow-sky-500/20 active:scale-[0.98] transition-all flex items-center gap-1.5"
               >
                 <ShieldCheck className="size-4" /> Internet Banking
@@ -300,9 +290,9 @@ export default function Header() {
               </div>
 
               <div className="flex-1 py-4 space-y-2">
-                <Link 
-                  to="/" 
-                  onClick={() => setIsOpen(false)} 
+                <Link
+                  to="/"
+                  onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Home
@@ -349,37 +339,37 @@ export default function Header() {
                   </AnimatePresence>
                 </div>
 
-                <Link 
-                  to="/branches" 
-                  onClick={() => setIsOpen(false)} 
+                <Link
+                  to="/branches"
+                  onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Our Branches
                 </Link>
-                <a 
-                  href="/#news" 
-                  onClick={() => setIsOpen(false)} 
+                <a
+                  href="/#news"
+                  onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   News Room
                 </a>
-                <a 
-                  href="/#downloads" 
-                  onClick={() => setIsOpen(false)} 
+                <a
+                  href="/#downloads"
+                  onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Downloads
                 </a>
-                <a 
-                  href="/#charges" 
-                  onClick={() => setIsOpen(false)} 
+                <a
+                  href="/#charges"
+                  onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Charges
                 </a>
-                <a 
-                  href="/#contact" 
-                  onClick={() => setIsOpen(false)} 
+                <a
+                  href="/#contact"
+                  onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 rounded-lg text-slate-800 font-bold hover:bg-slate-50 hover:text-[#0F7EC3]"
                 >
                   Contacts
@@ -387,7 +377,7 @@ export default function Header() {
               </div>
 
               <div className="pt-6 border-t border-slate-100 space-y-3 mt-auto">
-                <a 
+                <a
                   href="#ebanking"
                   onClick={() => setIsOpen(false)}
                   className="w-full text-center bg-[#0F7EC3] text-white py-3 rounded-xl font-bold text-xs shadow-md shadow-sky-500/10 active:scale-[0.98] transition-all flex items-center justify-center gap-1.5"
